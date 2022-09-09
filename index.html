@@ -10,7 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
     <title>Simon Game v2.0</title>
   </head>
@@ -19,10 +21,10 @@
     <main>
         
         <section id="container">
-            <div class="btnSimon green" id="top-left"></div>
-            <div class="btnSimon red" id="top-right"></div>
-            <div class="btnSimon yellow" id="bottom-left"></div>
-            <div class="btnSimon blue" id="bottom-right"></div>
+            <div class="btnSimon top-left" id="green"></div>
+            <div class="btnSimon top-right" id="red"></div>
+            <div class="btnSimon bottom-left" id="yellow"></div>
+            <div class="btnSimon bottom-right" id="blue"></div>
             <div id="inner-circle"><h1>SIMON</h1>
             <span id="score"></span></div>
         </section>
