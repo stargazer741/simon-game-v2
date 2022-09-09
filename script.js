@@ -1,7 +1,6 @@
 const buttonColors = ["red", "blue", "green", "yellow"];
-const gamePattern = [];
-const userClickedPattern = []; // const'a çevirince zaten değişkenin rengi ruhsarı da değişiyor
-//böylede yapabilirsin yada böyle arrayi temizleyebilirsin
+let gamePattern = [];
+let userClickedPattern = []; 
 let level = 0;
 let started = false;
 
@@ -28,7 +27,7 @@ $(".btnSimon").click(function (event) {
 });
 
 function nextSequence() {
-  userClickedPattern.length = 0; //burada sifirlama yaptigim icin hata veriyor bence - evet bencen doğru :D
+  userClickedPattern = [];
   level++;
   $("#score").text(level);
 
@@ -80,6 +79,6 @@ function checkAnswer(currentLevel) {
 
 function startOver() {
   level = 0;
-  gamePattern.length = 0;
+  gamePattern = [];
   started = false;
 }
