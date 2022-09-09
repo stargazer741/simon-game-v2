@@ -1,0 +1,142 @@
+:root {
+  --font-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
+  font-family: "Press Start 2P", cursive;
+}
+
+.title {
+  margin-top: -150px;
+  margin-bottom: 150px;
+}
+
+#container {
+  position: relative;
+
+  width: 500px;
+  height: 500px;
+  background-color: grey;
+
+  outline: 10px solid #170a1c;
+
+  border-radius: 50%;
+}
+
+#container #top-left {
+  background: rgba(64, 248, 2, 0.62);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 250px;
+  height: 250px;
+
+  border: none;
+  border-top-left-radius: 250px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#container #top-right {
+  background: rgba(254, 23, 23, 0.62);
+
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 250px;
+  height: 250px;
+
+  border: 0;
+  border-top-right-radius: 250px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#container #bottom-left {
+  background: rgba(252, 250, 16, 0.62);
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 250px;
+  height: 250px;
+
+  border: 0;
+  border-bottom-left-radius: 250px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#container #bottom-right {
+  background: rgba(16, 22, 252, 0.62);
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 250px;
+  height: 250px;
+
+  border: 0;
+  border-bottom-right-radius: 250px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#container #inner-circle {
+  background: #170a1c;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -125px 0px 0px -125px;
+
+  height: 250px;
+  width: 250px;
+
+  border-radius: 50%;
+}
+
+#inner-circle h1 {
+  color: #fff;
+  letter-spacing: 0.5rem;
+}
+
+#inner-circle #score {
+  margin-top: 25px;
+
+  background-color: black;
+  width: 100px;
+  height: 50px;
+
+  border: 2px solid grey;
+
+  color: red;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 24px;
+}
+
+
