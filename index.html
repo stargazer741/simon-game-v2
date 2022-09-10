@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
@@ -18,16 +18,41 @@
   </head>
   <body>
     <h1 class="title">Press ANY key to START!</h1>
-    <main>
-        
-        <section id="container">
-            <div class="btnSimon top-left" id="green"></div>
-            <div class="btnSimon top-right" id="red"></div>
-            <div class="btnSimon bottom-left" id="yellow"></div>
-            <div class="btnSimon bottom-right" id="blue"></div>
-            <div id="inner-circle"><h1>SIMON</h1>
-            <span id="score"></span></div>
-        </section>
-    </main>
+
+    <section id="container">
+      <div class="btnSimon top-left" id="green"></div>
+      <div class="btnSimon top-right" id="red"></div>
+      <div class="btnSimon bottom-left" id="yellow"></div>
+      <div class="btnSimon bottom-right" id="blue"></div>
+      <div id="inner-circle">
+        <h1>SIMON</h1>
+        <span id="score"></span>
+      </div>
+    </section>
+
+    <button id="modalButton">?</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>How To Play?</h1>
+        <p class="description">
+          Press ANY button to start the game. Simon will give the first signal.
+          Repeat the signal by pressing the same color button.
+          <br><br>
+          Simon will duplicate the first signal and add one. Repeat these two signals by pressing the same color buttons, in order.
+          <br><br>
+          Simon will duplicate these first two signals and add one.
+          <br><br>
+          Continue playing as long as you can repeat.
+        </p>
+
+        <div class="modal-footer">
+          <a href="https://github.com/stargazer741/simon-game-v2" target="_blank"><img src="images/GitHub-Mark-32px.png">  GitHub</a>
+        </div>
+
+
+      </div>
+    </div>
   </body>
 </html>
